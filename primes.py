@@ -2,6 +2,9 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
+    if number_of_primes <=0:
+        raise ValueError("invalid number typed")
+    
     list = []
     counter = 2
     while len(list) < number_of_primes:
@@ -16,5 +19,5 @@ def primes(number_of_primes):
             list.append(counter)
 
         counter+= 1
-        
+
     return list
